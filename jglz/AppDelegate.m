@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LZServiceItemsViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    LZServiceItemsViewController *serviceItemsVC=[[LZServiceItemsViewController alloc]init];
+    self.window.rootViewController=serviceItemsVC;
+    [self.window makeKeyAndVisible];/**< 显示窗成为主窗口 */
     return YES;
 }
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LZServiceItemsViewController.h
 //  jglz
 //
 //  Created by jglz on 15/9/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LZServiceItemsViewController : UIViewController
 
 @end
-
